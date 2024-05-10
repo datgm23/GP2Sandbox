@@ -35,12 +35,11 @@ namespace AM1
             }
 
             // 水平を保つ
-            var eu = transform.eulerAngles;
+            var eu = rb.rotation.eulerAngles;
             eu.x = eu.z = 0;
-            transform.eulerAngles = eu;
+            rb.rotation = Quaternion.Euler(eu);
 
-
-            float ang = Vector3.SignedAngle(transform.forward, to, Vector3.up);
+            float ang = Vector3.SignedAngle(rb.transform.forward, to, Vector3.up);
             float rotSpeed = Mathf.Min(ang, rotateSpeed);
             var angVel = Vector3.zero;
             angVel.y = rotSpeed;
@@ -55,6 +54,7 @@ namespace AM1
         {
             var v = rb.velocity;
             v += transform.forward * speed;
+            v.y = 0;
             rb.velocity = v;
         }
 
