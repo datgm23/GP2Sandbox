@@ -39,7 +39,7 @@ namespace AM1
             eu.x = eu.z = 0;
             rb.rotation = Quaternion.Euler(eu);
 
-            float ang = Vector3.SignedAngle(rb.transform.forward, to, Vector3.up);
+            float ang = Vector3.SignedAngle(transform.forward, to, Vector3.up);
             float rotSpeed = Mathf.Min(ang, rotateSpeed);
             var angVel = Vector3.zero;
             angVel.y = rotSpeed;
