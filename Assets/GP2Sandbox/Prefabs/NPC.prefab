@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3437756285044868390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.6}
+  m_LocalPosition: {x: 0, y: 0, z: 0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -156,7 +156,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.3
-  m_Center: {x: 0, y: 0.32, z: -0.2}
+  m_Center: {x: 0, y: 0.32, z: 0}
 --- !u!1001 &1445075778330383397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -182,7 +182,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f4ccf8063724e9646b271883e393f461,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f4ccf8063724e9646b271883e393f461,
         type: 3}
