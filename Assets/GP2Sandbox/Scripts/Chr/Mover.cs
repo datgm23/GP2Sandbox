@@ -54,7 +54,6 @@ namespace AM1
         {
             var v = rb.velocity;
             v += transform.forward * speed;
-            v.y = 0;
             rb.velocity = v;
         }
 
